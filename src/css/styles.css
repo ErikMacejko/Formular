@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap');@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+.header{
+    margin-bottom: 25px; 
+}
+
+h1{
+    color: #7ea2bf
+}
+
+p{
+    color: #2d2d2d;
+}
+
+.wrapForm{
+    width: 50%;
+    margin: 0 auto;
+}
+.wrapLabel{
+    display: flex;
+}
+
+label{
+    padding-bottom: 50px;
+    color: #7ea2bf;
+    font-size: 15px;
+}
+
+.labelName{
+    padding-left: 2.5px;
+}
+
+input{
+    margin-top: 12px;
+    border: none;
+    border-bottom: 1px solid #2d2d2d;  
+    height: 30px;
+    width: 270px;
+}
+
+.inputImg{
+    margin-top: 13.85px;
+ 
+}
+
+input, label, select {
+    display:block;
+    padding-right: 35px;
+}
+
+::placeholder { 
+    color: #d1d1d1;
+    font-size: 1.3em;
+    text-indent: 0px;
+}
+
+.inputButton{
+    background-color: white;
+    border-bottom: none;
+    color: #2d2d2d;
+    font-size: 20px;
+    margin-top: 100px;
+}
+
+select{
+    height: 25px;
+    width: 307px;
+    margin-top: 19.8px;
+    border: none;
+    border-bottom: 1px solid #2d2d2d; 
+}
+
+textarea{
+    border: none;
+    border-bottom: 2px solid #a1a1a1;  
+    resize: none;
+    height: 100px;
+    width: 350px;
+}
+
+
+/******************RESPONZIVITA*******************************/
+@media only screen and (max-width: 1600px) {
+
+    .wrapForm{
+        width: 80%;
+        margin: 0 auto;
+    }
+    
+}
+
+@media only screen and (max-width: 900px) {
+
+    .wrapForm{
+        width: 70%;
+    }
+
+    .wrapLabel{
+        flex-direction: column;
+        width: 100%;         
+    }
+
+    input{
+        width: 100%;
+    }
+    
+    textarea{
+        width: 100%;
+        height: 100px;
+    }
+
+    .inputButton{
+        margin-top: -20px; 
+    }
+
+    .labelName{
+        font-size: 15px;
+    }    
+}
+
+@media only screen and (max-width: 700px) {
+
+    .wrapForm{
+        width: 80%;
+    }
+
+    .wrapLabel{
+        flex-direction: column;
+        width: 100%;         
+    }
+
+    input{
+        width: 100%;
+    }
+    
+    textarea{
+        width: 100%;
+        height: 100px;
+    }
+
+    .inputButton{
+        margin-top: -20px; 
+    }
+
+    .labelName{
+        font-size: 15px;
+    } 
+    
+    select{      
+        width: 115%;
+    }
+}
+
+  

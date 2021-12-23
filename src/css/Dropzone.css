@@ -1,0 +1,25 @@
+
+
+.Dropzone>div>input{
+    border: none;
+}
+.previewImg{
+    height: auto; 
+    width: 270px;
+}
+.Dropzone{
+    border: 1px dashed #7ea2bf;  
+    height: auto; 
+    width: 270px;
+    text-align: center;
+    margin-top: 15px;
+}
+
+
+@media only screen and (max-width: 700px) {
+      
+    .Dropzone{    
+        width: 100%;   
+        margin: 0 auto;   
+    } 
+}
