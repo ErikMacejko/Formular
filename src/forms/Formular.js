@@ -43,6 +43,7 @@ export default function Formular(props) {
             <span className="labelName"> Nadpis </span>
             <input ref={nadpisInputRef} 
                    pattern="^[ěřůľščťžýáíéúôäňa-zA-Z\s]+$" 
+                   required={true}
                    type="text" 
                    placeholder="Nadpis" 
                    name="Nadpis" />
@@ -53,6 +54,7 @@ export default function Formular(props) {
             <div>            
                 <input className="inputImg"
                   ref={imgInputRef}
+                  required={true}
                   accept="image/*"
                   name="image"
                   type="file"  />                                                       
@@ -71,6 +73,7 @@ export default function Formular(props) {
             <input 
             ref={cenaInputRef} 
             pattern="^[0-9]+$"
+            required={true}
             type="text" 
             placeholder="Cena" 
             name="Cena" />
@@ -78,7 +81,7 @@ export default function Formular(props) {
 
           <label>
             <span style={{display:"block"}} className="labelName"> Stav </span>
-            <select style={{display:"block"}} ref={stavInputRef}>
+            <select style={{display:"block"}} ref={stavInputRef} required={true}>
             <option value="">Vybrať</option>
               <option value="Voľná">volná</option>
               <option value="Predaná">predaná</option>
@@ -89,7 +92,7 @@ export default function Formular(props) {
         <div className="wrapLabel">       
             <label>
               <span className="labelName" style={{display:"block"}}> Popis </span>
-              <textarea ref={popisInputRef} style={{display:"block"}} name="review" placeholder="Text area"></textarea>   
+              <textarea ref={popisInputRef} required={true} style={{display:"block"}} name="review" placeholder="Text area"></textarea>   
             </label>        
             <input className="inputButton" value="odeslat" type="submit" />      
         </div>    
