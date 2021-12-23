@@ -41,7 +41,11 @@ export default function Formular(props) {
         <div className="wrapLabel">  
           <label>
             <span className="labelName"> Nadpis </span>
-            <input ref={nadpisInputRef} type="text" placeholder="Nadpis" name="Nadpis" />
+            <input ref={nadpisInputRef} 
+                   pattern="^[ěřůľščťžýáíéúôäňa-zA-Z\s]+$" 
+                   type="text" 
+                   placeholder="Nadpis" 
+                   name="Nadpis" />
           </label>
 
           <label>
@@ -66,6 +70,7 @@ export default function Formular(props) {
             <span  className="labelName"> Cena </span>
             <input 
             ref={cenaInputRef} 
+            pattern="^[0-9]+$"
             type="text" 
             placeholder="Cena" 
             name="Cena" />
